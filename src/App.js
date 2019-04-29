@@ -11,7 +11,9 @@ function App() {
             column number one
           </div>  
           <div class="col-6">
-            column number one
+            <span>
+              <i class="fas fa-home" />
+            </span>
           </div>  
         </div>  
       </div>
