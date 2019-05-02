@@ -15,6 +15,10 @@ class App extends React.Component{
     return (
      <React.Fragment>
        <Navbar />
+       <ProductList />
+       <Details />
+       <Cart />
+       <Default /> 
      </React.Fragment> 
     );
   }
