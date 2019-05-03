@@ -32,16 +32,3 @@ https://www.iconfinder.com/Makoto_msk */}
         );
     }
 }
-
-const ButtonContainer = styled.button`
-    text-transform: capitalized;
-    font-size:1.4rem;
-    background: transparent;
-    border: 0.05rem solid var(--lightBlue);
-    color: var(--lightBlue);
-    border-redius: 0.5rem;
-    padding: 0.2rem 0.5rem; 
-    cursor: pointer;
-    margin: 0.2rem 0.5 rem 0.2rem 0;
-    transition: all 0.5s ease-in-out;
-`;
