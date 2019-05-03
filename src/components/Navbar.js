@@ -20,6 +20,11 @@ https://www.iconfinder.com/Makoto_msk */}
                         </Link>
                     </li>
                 </ul>
+                <Link to='/cart' className="ml-auto">
+                    <button>
+                        <i className="fas fa-cart-plus" />
+                    </button>
+                </Link>
             </nav>
         );
     }
