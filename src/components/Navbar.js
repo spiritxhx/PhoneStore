@@ -23,6 +23,7 @@ https://www.iconfinder.com/Makoto_msk */}
                 <Link to='/cart' className="ml-auto">
                     <button>
                         <i className="fas fa-cart-plus" />
+                        my cart
                     </button>
                 </Link>
             </nav>
