@@ -1,11 +1,20 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
-export default class ProductProvider extends Component {
+
+const ProductContext = React.createContext();
+//Provider
+//Consumer
+
+class ProductProvider extends Component {
   render() {
     return (
-      <div>
-        
-      </div>
+      <ProductContext.Provider value="hello from context">
+        {this.props.children}
+      </ProductContext.Provider>
     )
   }
 }
+
+const ProductConsumer = ProductContext.Consumer;
+
+export {ProductProvider,ProductConsumer}
