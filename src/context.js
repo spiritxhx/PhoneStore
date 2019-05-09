@@ -14,7 +14,7 @@ class ProductProvider extends Component {
         this.setProducts();
     }
     setProducts = () =>{
-        let products = [];
+        let tempProducts = [];
         storeProducts.forEach(item =>{
             const singleItem = {...item};
             tempProducts = [...tempProducts,singleItem];
