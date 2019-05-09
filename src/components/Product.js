@@ -57,8 +57,18 @@ const ProductWrapper = styled.div`
 }
 &:hover{
   .card{
-    border:0.04rem solid rgba(0,0,0,0.2)
-    box-shadow: 2px 2px 5 px 0px rgba(0,0,0,0.2)
+    border:0.04rem solid rgba(0,0,0,0.2);
+    box-shadow: 2px 2px 5 px 0px rgba(0,0,0,0.2);
   }
+  .card-footer{
+    background: rgba(247,247,247);
+  }
+}
+.img-cintainer{
+  position: relative;
+  overflow: hidden;
+}
+.img-container:hover .card-img-top{
+  transform:scale(1.2);
 }
 `;
