@@ -1,4 +1,7 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import {ProtuctConsumer} from '../context';
+import {Link} from 'react-router-dom';
+import {ButtonContainer} from './Button';
 
 export default class Details extends Component {
   render() {
