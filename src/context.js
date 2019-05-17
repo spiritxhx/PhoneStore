@@ -62,7 +62,11 @@ class ProductProvider extends Component {
       });
     }
 
-    
+    closeModal = () =>{
+      this.setState(()=>{
+        return {modalOpen:false}
+      });
+    }
 
   render() {
     return (
