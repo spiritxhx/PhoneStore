@@ -20,7 +20,7 @@ export default class Modal extends Component {
                   <ModalContainer>
                     <div className="container">
                       <div className="row">
-                          <div id="modal" className="col-8 mx-auto col-md-6 col-lg-4 text-center text-capitalize">
+                          <div id="modal" className="col-8 mx-auto col-md-6 col-lg-4 text-center text-capitalize p-5">
                               <h5>item added to the cart</h5>
                               <img src={img} className="img-fluid" alt="product" />
                               <h5>{title}</h5>
@@ -48,10 +48,10 @@ export default class Modal extends Component {
 
 const ModalContainer = styled.div`
     position:fixed;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background:rgba(0,0,0,0.3);
     display:flex;
     align-items:center;
