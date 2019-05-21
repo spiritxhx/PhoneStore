@@ -18,10 +18,11 @@ export default class Cart extends Component {
                   <CartColumns />
                 </React.Fragment>
               )
+            } else {
+              return <EmptyCart />;
             }
           }}
         </ProductConsumer>
-        <EmptyCart />
       </section>
     )
   }
