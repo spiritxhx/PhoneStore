@@ -72,7 +72,11 @@ class ProductProvider extends Component {
     }
 
     increment=id=>{
-      console.log('This is the increment method');
+      let tempCart = [...this.state.cart];
+      const selectedProduct = tempCart.find(item=>item.id === id);
+
+      const index = tempCart.indexOf(selectedProduct);
+
     }
     decrement=id=>{
       console.log('This is the decrement method');
