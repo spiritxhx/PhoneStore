@@ -1,20 +1,20 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import Product from './Product';
 import Title from './Title';
-import {storeProducts} from '../data';
-import {ProductConsumer} from '../context';
+import { storeProducts } from '../data';
+import { ProductConsumer } from '../context';
 
 export default class ProductList extends Component {
     render() {
-        return(
+        return (
             <React.Fragment>
                 <div className="py-5">
                     <div className="container">
-                    <Title name="Hanxiang's" title="products" />
+                        <Title name="Hanxiang's" title="products" />
                         <div className="row">
                             <ProductConsumer>
                                 {value => {
-                                    return  value.products.map( product =>{
+                                    return value.products.map(product => {
                                         return <Product key={product.id} product={product} />;
                                     })
                                 }}
@@ -23,8 +23,8 @@ export default class ProductList extends Component {
                     </div>
                 </div>
             </React.Fragment>
-                /* <Product /> */
-            
+            /* <Product /> */
+
         );
     }
 }

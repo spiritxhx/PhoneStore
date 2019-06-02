@@ -1,5 +1,5 @@
 import React from 'react';
-import {Switch,Route} from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar';
@@ -9,20 +9,19 @@ import Cart from './components/Cart/Cart.js';
 import Default from './components/Default';
 import Modal from './components/Modal';
 
-class App extends React.Component{
-  render()
-  {
+class App extends React.Component {
+  render() {
     return (
-     <React.Fragment>
-       <Navbar />
-       <Switch>    
-         <Route exact path="/" component={ProductList} />
-         <Route path="/details" component={Details} />
-         <Route path="/cart" component={Cart} />
-         <Route component={Default} />
-       </Switch>
-       <Modal />
-     </React.Fragment> 
+      <React.Fragment>
+        <Navbar />
+        <Switch>
+          <Route exact path="/" component={ProductList} />
+          <Route path="/details" component={Details} />
+          <Route path="/cart" component={Cart} />
+          <Route component={Default} />
+        </Switch>
+        <Modal />
+      </React.Fragment>
     );
   }
 }
